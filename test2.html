@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+            <link rel="stylesheet" type="text/css" href="css/animate.css">
+    </head>
+    <style>
+        .box{
+            display: none;
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin: 0 auto;
+        }
+    </style>
+    <body>
+        
+        <div style="height: 100px;">
+            <div class="box animated"></div>
+        </div>
+        <button  onclick="show()">显示</button>
+        <button  onclick="hide()">隐藏</button>
+    </body>
+    <script>
+        var box = document.getElementsByClassName("box")[0];
+        function show(){            
+            box.classList.remove("zoomOutRight");
+            box.classList.add("zoomInLeft");
+            box.style.display="block";
+        }
+        function hide(){
+            box.classList.remove("zoomInLeft");
+            box.classList.add("zoomOutRight");
+            setTimeout(function(){
+                box.style.display="none";
+            },1000);
+        }
+    </script>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>华夏聚龙</title>
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<style type="text/css">
+#header{background-color: #585858;position:relative;z-index: 9999;}
+.h-top{line-height: 36px;height:36px;font-size: 13px;color:#ccc;}
+.h-top p{margin:0;}
+.h-logo{max-width:250px;padding:0 15px;}
+.h-logo img{max-height:50px;vertical-align: middle;}
+#header .h-nav{border-top-color:#999;}
+#header .navbar-nav>li>a{padding:20px 20px;font-size: 14px;color:#fff;}
+#header .navbar-nav>li>a:hover,
+#header .navbar-nav>li>a:focus,
+#header .nav .open>a,
+#header .nav .open>a:focus,
+#header .nav .open>a:hover,
+#header .dropdown-menu
+{background-color: red;border:none;}
+#header .active{background-color: red;}
+#header .nav .open .dropdown-menu>li>a,#header .nav .sdown>li>a{color: #fff;}
+#header .nav .open .dropdown-menu>li>a:hover,
+#header .nav .open .dropdown-menu>li>a:focus,
+#header .nav .sdown>li>a:hover,
+#header .nav .sdown>li>a:focus
+{background-color: #D30C0C;}
+#header .navbar-header{padding:5px 0;}
+#header .navbar-right .dropdown-menu{left:0;}
+#header .navbar{margin-bottom:0;}
+#header .navbar-nav>li{margin:0 1px;}
+#header .navbar-toggle{border-color: #fff;}
+#header .navbar-toggle .icon-bar{background-color: #fff;}
+#header .dropdown:hover{background-color:red;}
+.comText{height:550px;background-color:#DA4F4F;}
+.comVedio{height:550px;background-color:#39A0D4;}
+#proCenter{text-align: center;}
+#proCenter .title{height:450px;line-height: 150px;background-color:#4BCCD0;}
+#proCenter .proList li{border:1px solid #161AEA;height: 200px;margin-top:10px;}
+.aLink .showInfo{height:100%;width:100%;text-align: center;opacity: 0;transition: all 2s;-webkit-transition:all 2s;}
+.aLink:hover .showInfo{opacity: 1;background-color:red;}
+
+ @media (min-width: 1200px){
+  #header .navbar-nav>li{margin:0 2px;}
+  #header .navbar-nav>li>a{padding:20px 25px;font-size: 18px;}
+} 
+
+@media screen and (min-width:992px) and (max-width:1199px){
+  #header .navbar-nav>li>a{padding:25px 15px;font-size: 14px;}
+}
+@media screen and (min-width:768px) and (max-width:991px){
+  .h-logo{width: 170px;}
+  .h-logo img{margin-top:10px;}
+  #header .navbar-nav>li>a{padding:20px 10px;font-size: 14px;} 
+}
+@media (max-width: 767px){
+  #header .navbar-nav>li>a{padding:10px 25px;font-size: 14px;}
+} 
+
+</style>
+</head>
+<body style="background-color:#959494;">
+  <div id="wrap" class="animated fadeInUp">
+    <header id='header'>
+    <div class="h-top container">
+      <div class=" col-xs-8 h-link text-left"><p>咨询热线：010-52256883</p></div>
+      <div class=" col-xs-4 h-lang text-right"><span>中文</span> | <span>English</span></div>
+    </div>
+    <nav class="h-nav navbar">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand h-logo" href="#"><img class="img-responsive" src="http://www.xn--xkru7kh02bge0a.com/skin/img/logo.png"></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">网站首页</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于我们</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">公司介绍</a></li>
+                <li><a href="#">企业文化</a></li>
+                <li><a href="#">企业荣誉</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品中心</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">纸币处理</a></li>
+                <li><a href="#">硬币处理</a></li>
+                <li><a href="#">自助设备</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">加工制造</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">生产基地</a></li>
+                <li><a href="#">生产设备</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">新闻资讯</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">公司新闻</a></li>
+                <li><a href="#">行业动态</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">售后服务</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">服务理念</a></li>
+                <li><a href="#">服务网络</a></li>
+                <li><a href="#">服务体系</a></li>
+              </ul>
+            </li>
+            <li><a href="#">联系我们</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </header>
+  <section id="comInfo" class="clearfix" style="background-color:#ccc;">
+    <div class='page-width wow fadeInDown' data-wow-duration='2s'>
+      <div class="comText col-sm-4">
+        这是文字内容区
+      </div>
+      <div class="comVedio col-sm-8">
+        这是视频区
+      </div>
+    </div>
+  </section>
+  <section id="proCenter" class='clearfix'>
+    <div class="page-width">
+      <p class='title wow fadeInUp data-wow-duration="3s" data-wow-delay="5s" data-wow-offset="10"  data-wow-iteration="10"'>这是标题区</p>
+      <ul class="proList wow fadeInUp">
+        <li class='col-sm-3'>
+          <a class="aLink" href="" style='display: block;height:100%;line-height:200px;'>
+            <div class='showInfo'>
+              这是产品
+            </div>
+          </a>
+        </li>
+        <li class='col-sm-3'>这是产品</li>
+        <li class='col-sm-3'>这是产品</li>
+        <li class='col-sm-3'>这是产品</li>
+        <li class='col-sm-3'>这是产品</li>
+        <li class='col-sm-3'>这是产品</li>
+      </ul>
+    </div>
+  </section>
+  </div>
+  
+<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js">
+</script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src='js/wow.min.js'></script>
+<script type="text/javascript">
+$(function(){
+        $(".navbar-nav a").click(function(){
+           $("#wrap").addClass('animated bounceOutDown')
+        })
+    })
+
+$(".navbar-nav>li").mouseleave(function(){
+  var _this=$(this);
+  var dropM=_this.children('.dropdown-menu')
+  if (dropM.length>0) {
+      dropM.stop(true,false).slideUp(200);
+  }else{
+     // _this.removeClass('open');
+  }
+}).mouseover(function(){
+  var _this=$(this);
+  _this.children('.dropdown-menu').addClass("sdown").stop(true,false).slideDown(300)
+})
+new WOW().init();
+</script>
+</body>
+</html>
